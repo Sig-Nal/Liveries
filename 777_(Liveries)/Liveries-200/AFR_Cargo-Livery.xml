@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">AFR_Cargo</name>
+			<texture>Liveries-200/AFR_Cargo-Livery.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>cargo</aircraft-class>
+    <aircraft-operator>AFC</aircraft-operator>
+</sim>
+</PropertyList>

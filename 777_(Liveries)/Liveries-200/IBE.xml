@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">IBE Iberia</name>
+            <texture>Liveries-200/IBE.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>IBE</aircraft-operator>
+</sim>
+</PropertyList>
