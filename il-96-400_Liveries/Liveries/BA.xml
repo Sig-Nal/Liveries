@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">British Airways</name>
+            <texture>Liveries/BA.png</texture>
+        </livery>
+        <lights>
+            <texture>Liveries/BA-lights.png</texture>
+        </lights>
+    </model>
+</sim>
+</PropertyList>

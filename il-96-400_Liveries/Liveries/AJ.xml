@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Royal Jordanian</name>
+            <texture>Liveries/AJ.png</texture>
+        </livery>
+        <lights>
+            <texture>Liveries/AJ-lights.png</texture>
+        </lights>
+    </model>
+</sim>
+</PropertyList>

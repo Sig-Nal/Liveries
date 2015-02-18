@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Groland Red</name>
+            <texture>Liveries/GRD-R.png</texture>
+        </livery>
+        <lights>
+            <texture>Liveries/GRD-R_lights.png</texture>
+        </lights>
+    </model>
+</sim>
+</PropertyList>
