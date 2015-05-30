@@ -1,2 +1,0 @@
-# Liveries
-Liveries for FlightGear.
