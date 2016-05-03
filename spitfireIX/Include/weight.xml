@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <weight n="0">
+    <name>left Wing</name>
+    <weight-lb type="double">0</weight-lb>
+    <selected>none</selected>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>MG 151 Machine gun</name>
+    <lbs>110.0</lbs>
+    </opt>
+    <opt><name>WGr 21 Rocket</name>
+    <lbs>270.0</lbs>
+    </opt>
+  </weight>
+
+ <weight n="1">
+    <name>Center</name>
+    <weight-lb type="double">0</weight-lb>
+    <selected>none</selected>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>MG 151 Machine gun</name>
+    <lbs>110.0</lbs>
+    </opt>
+    <opt><name>WGr 21 Rocket</name>
+    <lbs>270.0</lbs>
+    </opt>
+  </weight>
+
+ <weight n="2">
+    <name>right Wing</name>
+    <weight-lb type="double">0</weight-lb>
+    <selected>none</selected>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>MG 151 Machine gun</name>
+    <lbs>110.0</lbs>
+    </opt>
+    <opt><name>WGr 21 Rocket</name>
+    <lbs>270.0</lbs>
+    </opt>
+  </weight>
+
+</PropertyList>

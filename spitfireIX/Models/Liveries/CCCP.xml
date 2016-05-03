@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">CCCP</name>
+            <texture>Liveries/cccp.png</texture>
+
+   <amb_correction type="string">0</amb_correction>
+   <refl_correction type="string">0.1</refl_correction>
+
+
+        </livery>
+    </model>
+</sim>
+</PropertyList>

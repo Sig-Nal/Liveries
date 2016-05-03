@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <filter>
+    <name>airspeed aileron gain reciprocal filter</name>
+    <debug>false</debug>
+    <type>reciprocal</type>
+    <gain>
+      <prop>/controls/flight/heaviness/aileron-gain</prop>
+    </gain>
+    <input>
+      <property>/velocities/airspeed-kt</property>
+      <scale>0.05</scale>
+    </input>
+    <output>controls/flight/heaviness/aileron</output>
+    <u_min>0.001</u_min>
+    <u_max>1.0</u_max>
+  </filter>
+  <filter>
+    <name>Aileron filter</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <input>controls/flight/aileron</input>
+    <output>controls/flight/aileron-filtered</output>
+    <gain>
+      <prop>/controls/flight/heaviness/aileron</prop>
+      <value>1</value>
+    </gain>
+  </filter>
+
+  <filter>
+    <name>airspeed elevator gain reciprocal filter</name>
+    <debug>false</debug>
+    <type>reciprocal</type>
+    <gain>
+      <prop>/controls/flight/heaviness/elevator-gain</prop>
+    </gain>
+    <input>
+      <property>/velocities/airspeed-kt</property>
+      <scale>0.02</scale>
+    </input>
+    <output>controls/flight/heaviness/elevator</output>
+    <u_min>0.001</u_min>
+    <u_max>1.0</u_max>
+  </filter>
+  <filter>
+    <name>Elevator filter</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <input>controls/flight/elevator</input>
+    <output>controls/flight/elevator-filtered</output>
+    <gain>
+      <prop>/controls/flight/heaviness/elevator</prop>
+      <value>1</value>
+    </gain>
+  </filter>
+
+  <filter>
+    <name>airspeed rudder gain reciprocal filter</name>
+    <debug>false</debug>
+    <type>reciprocal</type>
+    <gain>
+      <prop>/controls/flight/heaviness/rudder-gain</prop>
+    </gain>
+    <input>
+      <property>/velocities/airspeed-kt</property>
+      <scale>0.02</scale>
+    </input>
+    <output>controls/flight/heaviness/rudder</output>
+    <u_min>0.001</u_min>
+    <u_max>1.0</u_max>
+  </filter>
+  <filter>
+    <name>Rudder filter</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <input>controls/flight/rudder</input>
+    <output>controls/flight/rudder-filtered</output>
+    <gain>
+      <prop>/controls/flight/heaviness/rudder</prop>
+      <value>1</value>
+    </gain>
+  </filter>
+</PropertyList>

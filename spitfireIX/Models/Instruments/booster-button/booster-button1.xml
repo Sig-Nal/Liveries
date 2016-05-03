@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+  <PropertyList> 
+    <path>booster-button.ac</path>
+    
+ <animation>
+  <type>pick</type>
+  <object-name>Circle</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine/booster</property>
+    <step>1.0</step>
+    <min>0</min>
+    <max>3</max>
+    <wrap>0</wrap>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>Circle</object-name>
+  <property>/controls/engines/engine/booster</property>
+  <factor>120</factor>
+  <center>
+   <x-m>0.009646</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.02869</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>  
+    <!--
+ <animation>
+  <type>translate</type>
+  <object-name>button</object-name>
+  <property>/controls/engine/engine[0]/booster</property>
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.00</ind>
+      <dep>0.02</dep>
+    </entry>
+  </interpolation>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>-0.0</z>
+  </axis>
+ </animation>
+-->
+    
+    <animation> 
+      <type>material</type>
+      <emission> 
+        <factor-prop>/controls/lighting/panel-norm</factor-prop>
+        <red>0.75</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+    </animation>
+
+
+  </PropertyList>

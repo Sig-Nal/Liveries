@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<PropertyList>
+	<path>stick.ac</path>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>upper</object-name>
+		<object-name>ring</object-name>
+		<object-name>case</object-name>
+		<object-name>button</object-name>
+		<object-name>lower</object-name>
+		<property>/controls/flight/elevator</property>
+		<interpolation>
+			<entry>
+				<ind>-1.0</ind>
+				<dep>-7.5</dep>
+			</entry>
+			<entry>
+				<ind>0.0</ind>
+				<dep>-2.5</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>2.5</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+	<animation>
+		<type>rotate</type>
+		<object-name>upper</object-name>
+		<object-name>ring</object-name>
+		<object-name>case</object-name>
+		<object-name>button</object-name>
+		<property>/controls/flight/aileron</property>
+		<interpolation>
+			<entry>
+				<ind>-1.0</ind>
+				<dep>-40</dep>
+			</entry>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1.0</ind>
+				<dep>40</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0.64</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+</PropertyList>

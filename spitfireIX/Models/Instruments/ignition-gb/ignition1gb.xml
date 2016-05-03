@@ -1,0 +1,131 @@
+<PropertyList>
+
+ <path>ignition-gb.ac</path>
+<animation>
+  <type>rotate</type>
+  <object-name>left</object-name>
+
+  <property>controls/engines/engine[0]/magnetos</property>
+ <interpolation>
+   <entry>
+    <ind>3</ind>
+    <dep>90</dep>
+   </entry>
+   <entry>
+    <ind>1</ind>
+    <dep>90</dep>
+   </entry>
+   <entry>
+    <ind>2</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>  
+
+<animation>
+  <type>rotate</type>
+  <object-name>right</object-name>
+
+  <property>controls/engines/engine[0]/magnetos</property>
+ <interpolation>
+   <entry>
+    <ind>3</ind>
+    <dep>90</dep>
+   </entry>
+   <entry>
+    <ind>1</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>2</ind>
+    <dep>90</dep>
+   </entry>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>  
+
+ <animation>
+  <type>pick</type>
+  <object-name>left</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine/magnetos</property>
+    <step>1.0</step>
+    <min>0</min>
+    <max>3</max>
+    <wrap>0</wrap>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>left_on</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine/magnetos</property>
+    <step>-1.0</step>
+    <min>0</min>
+    <max>3</max>
+    <wrap>0</wrap>
+    </binding>
+  </action>
+</animation>
+ <animation>
+  <type>pick</type>
+  <object-name>right</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine/magnetos</property>
+    <step>2.0</step>
+    <min>0</min>
+    <max>3</max>
+    <wrap>0</wrap>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>right_on</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine/magnetos</property>
+    <step>-2.0</step>
+    <min>0</min>
+    <max>3</max>
+    <wrap>0</wrap>
+    </binding>
+  </action>
+</animation>
+
+</PropertyList>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <filter>
+    <name>Aileron Filter</name>
+    <debug>false</debug>
+    <type>noise-spike</type>
+    <input>/controls/flight/aileron</input>
+    <output>/controls/flight/aileron-filtered</output>
+    <max-rate-of-change>0.1</max-rate-of-change>
+<!--
+      <prop>controls/flight/control-heaviness</prop>
+
+    </max-rate-of-change>
+-->
+  </filter>
+
+
+</PropertyList>

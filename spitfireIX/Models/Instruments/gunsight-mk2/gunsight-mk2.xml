@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!-- air speed indicator -->
+
+<PropertyList>
+
+ <path>gunsight-mk2.ac</path>
+
+      	<effect>
+		<inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>glass</object-name>
+	</effect>
+ 
+	<animation>
+		<type>material</type>
+		<object-name>glass</object-name>
+
+		<transparency>
+			<alpha>0.2</alpha>
+		</transparency>
+	</animation>
+ 
+</PropertyList>

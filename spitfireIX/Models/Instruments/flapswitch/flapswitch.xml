@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<PropertyList>
+	<path>flapswitch.ac</path>
+
+<animation>
+  <type>pick</type>
+  <object-name>pick.down</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>spit9.flaps(1)</script>
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>pick.up</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>spit9.flaps(0)</script>
+    </binding>
+  </action>
+</animation>
+
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Mesh.001</object-name>
+		<property>controls/flight/flaps</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>-180</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+		<!--0.0180684	1.0099e-008	0.00703125-->
+		<center>
+			<x-m>0.0180684</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<condition>
+			<greater-than>
+				<property>/controls/lighting/panel-norm</property>
+				<value>0</value>
+			</greater-than>
+		</condition>
+		<emission>
+			<factor-prop>/controls/lighting/panel-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.25</green>
+			<blue>0.25</blue>
+		</emission>
+	</animation>
+
+	<!-- *** LoD *** -->
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>5</max-m>
+	</animation>
+</PropertyList>

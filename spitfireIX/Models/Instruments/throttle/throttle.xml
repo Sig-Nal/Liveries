@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>throttle.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Throttle</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>-30</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>30</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Prop</object-name>
+  <property>controls/engines/engine[0]/propeller-pitch</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>-30</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>30</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Mixture</object-name>
+  <property>controls/engines/engine[0]/mixture-lever</property>
+  <interpolation>
+   <entry>
+    <ind>0.8</ind>
+    <dep>-10</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>30</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <!--
+ <animation>
+  <type>rotate</type>
+  <object-name>Lever-Cutout</object-name>
+  <property>controls/engines/engine[0]/boost-control-cutout</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>60</dep>
+   </entry>
+  </interpolation>
+  <axis>
+  <x1-m>-0.0647557</x1-m>
+  <y1-m>0.0224134</y1-m>
+  <z1-m>0.0593518</z1-m>
+  <x2-m>-0.0647557</x2-m>
+  <y2-m>0.0106476</y2-m>
+  <z2-m>0.0593518</z2-m>
+  </axis>
+  
+ </animation>
+-->
+</PropertyList>
+
+

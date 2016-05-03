@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+  <PropertyList> 
+    <path>spit-fuelcock.ac</path>
+    
+<animation>
+  <type>rotate</type>
+  <object-name>lever</object-name>
+  <property>consumables/fuel/tank[0]/selected</property>
+  <factor>70</factor>
+  <center>
+   <x-m>-0.03</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>  
+
+<animation>
+  <type>pick</type>
+  <object-name>lever</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-toggle</command>
+      <property>/consumables/fuel/tank[0]/selected</property>
+    </binding>
+  </action>
+</animation>
+    
+    <animation> 
+      <type>material</type>
+      <emission> 
+        <factor-prop>/controls/lighting/panel-norm</factor-prop>
+        <red>0.75</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+    </animation>
+
+
+  </PropertyList>

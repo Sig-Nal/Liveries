@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+ 
+  <!-- tanks 
+  0 = not selected
+  1 = 90 gal slipper tank
+  2 = 170 gal slipper tank
+  3 = Bomb selected but dropped/gone
+  4 = Droptank
+  5 = 250 lbs Bomb
+  6 = 500 lbs Bomb
+  
+  -->
+  
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/90gal.ac</path>
+    <name>drop90</name>
+    <offsets> 
+      <x-m>3.1373</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.779</z-m>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>drop90</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[1]/type</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+    <model> 
+    <path>Aircraft/spitfireIX/Models/stores/170gal.ac</path>
+    <name>drop170</name>
+    <offsets> 
+      <x-m>3.00873</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.8872</z-m>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>drop170</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[1]/type</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+    <model> 
+    <path>Aircraft/spitfireIX/Models/stores/centerpylon.ac</path>
+    <name>centerpylon</name>
+    <offsets> 
+      <x-m>3.2376</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.75928</z-m>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>centerpylon</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/armament/pylon[1]/type</property>
+        <value>3</value>
+      </greater-than>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/bomb125.ac</path>
+    <name>bomb125.C</name>
+    <offsets> 
+      <x-m>3.35</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.88</z-m>
+      <roll-deg>45</roll-deg>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>bomb125.C</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[1]/type</property>
+        <value>4</value>
+      </equals>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/bomb250.ac</path>
+    <name>bomb250.C</name>
+    <offsets> 
+      <x-m>3.35</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.88</z-m>
+      <roll-deg>45</roll-deg>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>bomb250.C</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[1]/type</property>
+        <value>5</value>
+      </equals>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/bomb500.ac</path>
+    <name>bomb500.C</name>
+    <offsets> 
+      <x-m>3.3</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-0.94</z-m>
+      <roll-deg>45</roll-deg>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>bomb500.C</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[1]/type</property>
+        <value>6</value>
+      </equals>
+    </condition>
+  </animation>
+
+
+
+  
+  <!-- rockets 	
+  <model> 
+    <path>Aircraft/mosquito/Models/stores/rocketsR.xml</path>
+    <name>rockets.R</name>
+  </model>
+  <model> 
+    <path>Aircraft/mosquito/Models/stores/rocketsL.xml</path>
+    <name>rockets.L</name>
+  </model>
+-->
+  <!-- wing bombs 
+  0 = not selected
+  1 = selected but dropped/gone
+  2 = 125 lbs bomb
+  3 = 250 lbs bomb
+  4 = Modification XXX
+  -->
+  
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/wingpylon.ac</path>
+    <name>pylon.L</name>
+    <offsets> 
+      <x-m>3.197</x-m>
+      <y-m>-2.0216</y-m>
+      <z-m>-0.5928</z-m>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>pylon.L</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/armament/pylon[0]/type</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/bomb125.ac</path>
+    <name>bomb125.L</name>
+    <offsets> 
+      <x-m>3.2543</x-m>
+      <y-m>-2.02173</y-m>
+      <z-m>-0.74</z-m>
+      <roll-deg>45</roll-deg>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>bomb125.L</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[0]/type</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/bomb250.ac</path>
+    <name>bomb250.L</name>
+    <offsets> 
+      <x-m>3.2543</x-m>
+      <y-m>-2.02173</y-m>
+      <z-m>-0.74</z-m>
+      <roll-deg>45</roll-deg>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>bomb250.L</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[0]/type</property>
+        <value>3</value>
+      </equals>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/modXXX.ac</path>
+    <name>modXXX.L</name>
+    <offsets> 
+      <x-m>3.21</x-m>
+      <y-m>-2.0</y-m>
+      <z-m>-0.957</z-m>
+
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>modXXX.L</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[0]/type</property>
+        <value>4</value>
+      </equals>
+    </condition>
+  </animation>
+
+
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/wingpylon.ac</path>
+    <name>pylon.R</name>
+    <offsets> 
+      <x-m>3.197</x-m>
+      <y-m>2.0216</y-m>
+      <z-m>-0.5928</z-m>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>pylon.R</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/armament/pylon[2]/type</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/bomb125.ac</path>
+    <name>bomb125.R</name>
+    <offsets> 
+      <x-m>3.2543</x-m>
+      <y-m>2.02173</y-m>
+      <z-m>-0.74</z-m>
+      <roll-deg>45</roll-deg>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>bomb125.R</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[2]/type</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/bomb250.ac</path>
+    <name>bomb250.R</name>
+    <offsets> 
+      <x-m>3.22</x-m>
+      <y-m>2.02173</y-m>
+      <z-m>-0.74</z-m>
+      <roll-deg>45</roll-deg>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>bomb250.R</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[2]/type</property>
+        <value>3</value>
+      </equals>
+    </condition>
+  </animation>
+  <model> 
+    <path>Aircraft/spitfireIX/Models/stores/modXXX.ac</path>
+    <name>modXXX.R</name>
+    <offsets> 
+      <x-m>3.21</x-m>
+      <y-m>2.0</y-m>
+      <z-m>-0.957</z-m>
+
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>modXXX.R</object-name>
+    <condition>
+      <equals>
+        <property>sim/armament/pylon[2]/type</property>
+        <value>4</value>
+      </equals>
+    </condition>
+  </animation>
+
+
+
+</PropertyList>

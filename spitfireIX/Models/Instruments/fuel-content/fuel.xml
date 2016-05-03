@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+  <!-- fuel contents -->
+  <PropertyList> 
+    <path>fuel.ac</path>
+    <animation> 
+      <type>rotate</type>
+      <object-name>Needle2</object-name>
+      <property>consumables/fuel/tank[1]/level-gal_us</property>
+      <interpolation> 
+        <entry> 
+          <ind>0</ind>
+          <dep>15</dep>
+        </entry>
+        <entry> 
+          <ind>6</ind>
+          <dep>30</dep>
+        </entry>
+        <entry> 
+          <ind>18.014</ind>
+          <dep>45</dep>
+        </entry>
+        <entry> 
+          <ind>24.02</ind>
+          <dep>50</dep>
+        </entry>
+        <entry> 
+          <ind>30.02</ind>
+          <dep>57.5</dep>
+        </entry>
+        <entry> 
+          <ind>36.03</ind>
+          <dep>65</dep>
+        </entry>
+        <entry> 
+          <ind>44.44</ind>
+          <dep>80</dep>
+        </entry>
+      </interpolation>
+      <center> 
+        <x-m>0.0016233</x-m>
+        <y-m>0</y-m>
+        <z-m>0.0219562</z-m>
+      </center>
+      <axis> 
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </axis>
+    </animation>
+
+	<animation> 
+      <type>material</type>
+      <emission> 
+        <factor-prop>controls/lighting/panel-norm</factor-prop>
+        <red>0.75</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+    </animation>
+
+    <!-- *** LoD *** -->
+    <animation> 
+      <type>range</type>
+      <min-m>0</min-m>
+      <max-m>5</max-m>
+    </animation>
+
+    <animation> 
+	  <type>noshadow</type>
+    </animation>
+
+  </PropertyList>

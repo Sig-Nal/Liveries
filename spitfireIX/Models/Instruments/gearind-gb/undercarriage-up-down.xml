@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!-- flap indicator -->
+<PropertyList>
+	<path>undercarriage-up-down.ac</path>
+	
+	<!-- Panel lighting-->
+	<animation>
+		<type>material</type>
+		<object-name>Mount</object-name>
+		<emission>
+			<factor-prop>/controls/lighting/panel-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.25</green>
+			<blue>0.25</blue>
+		</emission>
+	</animation>
+	
+	<!-- **************** gear-up **************** -->
+	<animation>
+		<type>select</type>
+		<object-name>lamp-u</object-name>
+		<condition>
+			<and>
+				<equals>
+					<property>gear/gear/position-norm</property>
+					<value>0</value>
+				</equals>
+				<equals>
+					<property>gear/gear[1]/position-norm</property>
+					<value>0</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+	
+	<!-- **************** gear-down **************** -->
+	<animation>
+		<type>select</type>
+		<object-name>lamp-d</object-name>
+		<condition>
+			<and>
+				<equals>
+					<property>gear/gear/position-norm</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>gear/gear[1]/position-norm</property>
+					<value>1</value>
+				</equals>
+			</and>
+		</condition>
+	</animation>
+	<animation>
+		<type>material</type>
+		<object-name>Mount</object-name>
+		<emission>
+			<factor-prop>/controls/lighting/panel-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.25</green>
+			<blue>0.25</blue>
+		</emission>
+	</animation>
+	
+	<!-- *** LoD *** -->
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>5</max-m>
+	</animation>
+</PropertyList>
