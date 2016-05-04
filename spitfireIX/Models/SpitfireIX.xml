@@ -730,14 +730,15 @@
   </axis>
     </animation> 
 
-  <model> 
-   <path>Aircraft/Generic/Human/Models/pilot.xml</path>
+  <model>
+   <!--path>Aircraft/Generic/Human/Models/pilot.xml</path-->
+   <path>Aircraft/spitfireIX/Models/Pilot/pilot.xml</path>
    <name>pilot</name>
 		<nopreview/>
     <offsets> 
      <x-m>4.6</x-m>
      <y-m>0.0</y-m>
-     <z-m>-0.2</z-m>
+     <z-m>-0.03</z-m>
 		 <pitch-deg>0.0</pitch-deg>
     </offsets>
   </model>
