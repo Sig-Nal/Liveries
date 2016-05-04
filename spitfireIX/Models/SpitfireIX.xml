@@ -1078,6 +1078,8 @@
  </animation>
 -->
 
+<!-- Nav Lights    -->
+
  <model>
     <path>Aircraft/spitfireIX/Models/Lights/RedLight.xml</path>
         <!--property>controls/lighting/nav-lights</property-->
@@ -1098,7 +1100,15 @@
     </offsets>
   </model>
 
-
+ <model>
+    <path>Aircraft/spitfireIX/Models/Lights/RedLight.xml</path>
+        <!--property>controls/lighting/nav-lights</property-->
+    <offsets>
+      <x-m>  9 </x-m>
+      <y-m> 0.005 </y-m>
+      <z-m> 1.5 </z-m>
+    </offsets>
+  </model>
 
 <!-- Landing Lights    -->
 
