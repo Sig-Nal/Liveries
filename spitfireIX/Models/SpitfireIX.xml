@@ -1212,9 +1212,9 @@
           </and>
          </condition>
 		<offsets>
-            <x-m> 2.13 </x-m>
-            <y-m>-1.80 </y-m>
-            <z-m>-0.82 </z-m>
+            <x-m> 2.4 </x-m>
+            <y-m>-1.50 </y-m>
+            <z-m>-0.62 </z-m>
 			<pitch-deg>-5</pitch-deg>
 			<heading-deg>2.5</heading-deg>
 		</offsets>
@@ -1230,9 +1230,9 @@
           </and>
          </condition>
 		<offsets>
-            <x-m> 2.13 </x-m>
-            <y-m> 1.80 </y-m>
-            <z-m>-0.82 </z-m>
+            <x-m> 2.4 </x-m>
+            <y-m> 1.50 </y-m>
+            <z-m>-0.62 </z-m>
 			<pitch-deg>-5</pitch-deg>
 			<heading-deg>-2.5</heading-deg>
 		</offsets>
