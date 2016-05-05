@@ -816,7 +816,7 @@
   <object-name>startup0-0</object-name>
   <condition>
    <equals>
-    <property>engines/engine[0]/startup_smoke</property>
+    <property>sim/multiplay/generic/float[12]</property>
     <value>1</value>
    </equals>
   </condition>
