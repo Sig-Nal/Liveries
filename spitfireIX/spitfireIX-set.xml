@@ -292,10 +292,14 @@ October 2007 Detlef Faber
  			    <float n="3" alias="/controls/doors/door/position-norm"/>
 	            <float n="4" alias="/sim/model/crew/pilot/visible" />
  			    <float n="5" alias="/controls/flight/elevator"/>
+	            <float n="8" alias="/controls/engines/engine[0]/throttle" />
+	            <float n="17" alias="/sim/model/smokeshooterspeed"/>
+
 
 	            <int type="int" n="3" alias="/controls/lighting/nav-lights"/>
 	            <!--int type="int" n="4" alias="/controls/lighting/panel-norm"/-->
 	            <int type="int" n="5" alias="/controls/lighting/landing-light"/>
+	            <int type="int" n="12" alias="/engines/engine[0]/running"/>
 
 		</generic>
 	</multiplay>

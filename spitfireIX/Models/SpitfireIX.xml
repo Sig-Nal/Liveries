@@ -786,7 +786,7 @@
       </axis>
     </animation> 
 -->
-<!-- startup smoke left engine -->
+<!-- startup smoke left and right engine -->
  <model>
     <name>startup0-0</name>
     <path>Aircraft/spitfireIX/Models/Effects/startupsmoke.xml</path>
@@ -1277,5 +1277,36 @@
   </offsets>
  </model>
 
-
+  <!-- smoke -->
+  
+  <model>
+    <path>Aircraft/spitfireIX/Models/Effects/smoke.xml</path>
+    <offsets>
+   <x-m>1.8</x-m>
+   <y-m>0.4</y-m>
+   <z-m>0.26</z-m>
+	 <heading-deg>20</heading-deg>
+	 <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/spitfireIX/Models/Effects/smoke2.xml</path>
+    <offsets>
+   <x-m>1.8</x-m>
+   <y-m>-0.4</y-m>
+   <z-m>0.26</z-m>
+	 <heading-deg>20</heading-deg>
+	 <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/spitfireIX/Models/Effects/smoke3.xml</path>
+    <offsets>
+   <x-m>1.8</x-m>
+   <y-m>0.4</y-m>
+   <z-m>0.26</z-m>
+	 <heading-deg>20</heading-deg>
+	 <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
 </PropertyList>
