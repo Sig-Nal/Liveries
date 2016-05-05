@@ -181,7 +181,7 @@
             <object-name>Landing_Light</object-name>
             <condition>
                 <and>
-				<property>controls/lighting/landing-light</property>
+				<property>sim/multiplay/generic/int[5]</property>
                      <property>sim/rendering/rembrandt/enabled</property>
                     <!--<greater-than>
                         <property>sim/time/sun-angle-rad</property>

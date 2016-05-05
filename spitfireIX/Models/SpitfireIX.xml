@@ -10,7 +10,7 @@
   <nasal>
     <load>
       var update = aircraft.overlay_update.new();
-      update.add("Aircraft/spitfireIX/Models/AI-Liveries", "sim/model/livery/file");
+      update.add("Aircraft/spitfireIX/Models/Liveries", "sim/model/livery/file");
       update.add("Aircraft/Generic/Logos", "sim/multiplay/generic/string");
 
 				var self = cmdarg();
@@ -184,7 +184,7 @@
 <animation>
   <type>spin</type>
   <object-name>prophub</object-name>
-    <property>engines/engine[0]/rpm</property>
+    <property>sim/multiplay/generic/float[9]</property>
     <factor>-0.479</factor>
   <center>
    <x-m>0.60</x-m>
@@ -202,7 +202,7 @@
    <name>pdisk</name>
   <condition>
    <not-equals>
-    <property>engines/engine[0]/running</property>
+    <property>sim/multiplay/generic/float[10]</property>
     <value>0</value>
    </not-equals>
   </condition>
@@ -216,7 +216,7 @@
  <animation>
   <type>rotate</type>
   <object-name>prop</object-name>
-  <property>engines/engine[0]/crankloop</property>
+  <property>sim/multiplay/generic/float[11]</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -271,7 +271,7 @@
   <object-name>prop</object-name>
   <condition>
    <not-equals>
-    <property>engines/engine[0]/running</property>
+    <property>sim/multiplay/generic/float[10]</property>
     <value>1</value>
    </not-equals>
   </condition>

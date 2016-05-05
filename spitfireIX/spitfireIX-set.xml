@@ -78,6 +78,7 @@ October 2007 Detlef Faber
  <sim>
   <description>Supermarine Spitfire Mk IX</description>
   <author>Detlef Faber</author>
+  <aircraft-version>3.2</aircraft-version>
   <rating>
     <FDM type="int">4</FDM>
     <systems type="int">3</systems>
@@ -293,12 +294,17 @@ October 2007 Detlef Faber
 	            <float n="4" alias="/sim/model/crew/pilot/visible" />
  			    <float n="5" alias="/controls/flight/elevator"/>
 	            <float n="8" alias="/controls/engines/engine[0]/throttle" />
+	            <float n="9" alias="/engines/engine[0]/rpm" />
+	            <float n="10" alias="/engines/engine[0]/running" />
+	            <float n="11" alias="/engines/engine[0]/crankloop" />
 	            <float n="17" alias="/sim/model/smokeshooterspeed"/>
 
 
 	            <int type="int" n="3" alias="/controls/lighting/nav-lights"/>
-	            <!--int type="int" n="4" alias="/controls/lighting/panel-norm"/-->
+	         <!--int type="int" n="4" alias="/controls/lighting/panel-norm"/-->
 	            <int type="int" n="5" alias="/controls/lighting/landing-light"/>
+	            <int type="int" n="6" alias="/controls/switches/landing-light"/>
+
 	            <int type="int" n="12" alias="/engines/engine[0]/running"/>
 
 		</generic>

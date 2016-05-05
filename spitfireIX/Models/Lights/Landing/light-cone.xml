@@ -43,7 +43,7 @@
     <condition>
       <and>
         <equals>
-          <property>controls/switches/landing-light</property>
+          <property>sim/multiplay/generic/int[6]</property>
           <value> 1 </value>
         </equals>
         <!--equals>
