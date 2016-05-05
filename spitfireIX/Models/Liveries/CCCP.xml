@@ -10,7 +10,6 @@
    <amb_correction type="string">0</amb_correction>
    <refl_correction type="string">0.1</refl_correction>
 
-
         </livery>
     </model>
 </sim>
