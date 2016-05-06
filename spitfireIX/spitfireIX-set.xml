@@ -300,6 +300,7 @@ October 2007 Detlef Faber
 	            <float n="12" alias="/engines/engine[0]/startup_smoke" />
 	            <float n="13" alias="/gear/gear[2]/caster-angle-deg" />
 	            <float n="17" alias="/sim/model/smokeshooterspeed"/>
+	            <float n="18" alias="/sim/aircraft"/>
 
 
 	            <int type="int" n="3" alias="/controls/lighting/nav-lights"/>
@@ -307,6 +308,7 @@ October 2007 Detlef Faber
 	            <int type="int" n="5" alias="/controls/lighting/landing-light"/>
 	            <int type="int" n="6" alias="/controls/switches/landing-light"/>
 
+	            <int type="int" n="11" alias="/sim/aircraft"/>
 	            <int type="int" n="12" alias="/engines/engine[0]/running"/>
 
 		</generic>

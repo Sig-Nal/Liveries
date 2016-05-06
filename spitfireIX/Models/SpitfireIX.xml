@@ -270,10 +270,10 @@
   <type>select</type>
   <object-name>prop</object-name>
   <condition>
-   <not-equals>
+   <not>
     <property>sim/multiplay/generic/float[10]</property>
     <value>1</value>
-   </not-equals>
+   </not>
   </condition>
  </animation>
 

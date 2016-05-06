@@ -1,13 +1,13 @@
 <PropertyList>
 		<path>cockpit.ac</path>
-<!--
+
   <effect>
     <inherits-from>Aircraft/spitfireIX/Models/Effects/interiour_bumpspec</inherits-from>
     <object-name>interiour</object-name>
     <object-name>panel</object-name>
     <object-name>frontcanopy.001</object-name>
   </effect>
--->
+
     <model>
       <path>Aircraft/spitfireIX/Models/Instruments/gunsight-mk2/gunsight-mk2.xml</path>
       <offsets> 
