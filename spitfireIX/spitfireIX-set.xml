@@ -298,6 +298,7 @@ October 2007 Detlef Faber
 	            <float n="10" alias="/engines/engine[0]/running" />
 	            <float n="11" alias="/engines/engine[0]/crankloop" />
 	            <float n="12" alias="/engines/engine[0]/startup_smoke" />
+	            <float n="13" alias="/gear/gear[2]/caster-angle-deg" />
 	            <float n="17" alias="/sim/model/smokeshooterspeed"/>
 
 

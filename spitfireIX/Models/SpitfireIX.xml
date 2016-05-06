@@ -662,7 +662,7 @@
       <object-name>tailwheel</object-name>
       <object-name>tailwheel1</object-name>
       <object-name>tailgear2</object-name>
-      <property>gear/gear[2]/caster-angle-deg</property>
+      <property>sim/multiplay/generic/float[13]</property>
       <factor>1</factor>
       <center> 
         <x-m>8.345</x-m>
