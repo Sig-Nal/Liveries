@@ -78,6 +78,10 @@
     </unload>
   </nasal>
 
+ <sound>
+       <path>Aircraft/spitfireIX/Sounds/spitfire-sound-mp.xml</path>
+ </sound>
+
   <offsets>
     <z-m>0.0</z-m>
   </offsets>
@@ -148,8 +152,10 @@
 
  <animation>
   <type>select</type>
-  <object-name>stdtip.L</object-name>
-  <object-name>stdtip.R</object-name>
+  <!--object-name>stdtip.L</object-name>
+  <object-name>stdtip.R</object-name-->
+  <object-name>exttip.L</object-name>
+  <object-name>exttip.R</object-name>
   <condition>
    <equals>
     <property>sim/aircraft</property>

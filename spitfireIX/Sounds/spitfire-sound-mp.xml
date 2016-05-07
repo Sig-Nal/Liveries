@@ -33,7 +33,7 @@
       </crank>
 	  <crank> 
         <name>starter</name>
-        <path>Aircraft/Spitfire/Sounds/merlin_starter.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/merlin_starter.wav</path>
 		<mode>looped</mode>
         <property>/engines/engine/cranking</property>
         <volume> 
@@ -50,7 +50,7 @@
       <engine> 
         <name>engine idle rpm</name>
         <mode>looped</mode>
-        <path>Aircraft/Spitfire/Sounds/merlin_rpm1.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/merlin_rpm1.wav</path>
         <condition> 
           <property>/engines/engine/running</property>
           <less-than> 
@@ -84,7 +84,7 @@
       <engine-2> 
         <name>engine low rpm</name>
         <mode>looped</mode>
-        <path>Aircraft/Spitfire/Sounds/spita.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/spita.wav</path>
         <condition> 
           <property>/engines/engine/running</property>
           <greater-than-equals> 
@@ -119,7 +119,7 @@
       <engine-4> 
         <name>engine high rpm</name>
         <mode>looped</mode>
-        <path>Aircraft/Spitfire/Sounds/merlin_rpm4.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/merlin_rpm4.wav</path>
         <condition> 
           <property>/engines/engine/running</property>
           <greater-than-equals> 
@@ -148,7 +148,7 @@
       </engine-4>
       <engine-0> 
         <name>engine shut down rpm</name>
-        <path>Aircraft/Spitfire/Sounds/merlin_shutdown.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/merlin_shutdown.wav</path>
         <condition> 
           <property>/engines/engine/running</property>
           <not> 
@@ -192,7 +192,7 @@
    </pitch>
   </propeller>
 -->
-      <rumble> 
+      <!--rumble> 
         <name>rumble</name>
         <mode>looped</mode>
         <path>Sounds/rumble.wav</path>
@@ -213,9 +213,9 @@
       <gear> 
         <name>gear</name>
         <mode>in-transit</mode>
-        <path>Aircraft/Spitfire/Sounds/gear.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/gear.wav</path>
         <property>/gear/gear[0]/position-norm</property>
-      </gear>
+      </gear-->
       <!--
   <gear>
    <name>gear-lock</name>
@@ -229,7 +229,7 @@
   </gear>
   
   -->
-      <squeal> 
+      <!--squeal> 
         <name>squeal</name>
         <path>Sounds/squeal.wav</path>
         <condition> 
@@ -263,32 +263,43 @@
       <flap> 
         <name>flaps</name>
         <mode>in-transit</mode>
-        <path>Aircraft/Spitfire/Sounds/flaps.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/flaps.wav</path>
         <property>/surface-positions/flap-pos-norm</property>
         <volume> 
           <factor>0.8</factor>
         </volume>
         <reference-dist>10.0</reference-dist>
         <max-dist>20.0</max-dist>
-      </flap>
+      </flap-->
+      <door> 
+        <name>door</name>
+        <mode>in-transit</mode>
+        <path>Aircraft/spitfireIX/Sounds/door.wav</path>
+        <property>/controls/doors/door/position-norm</property>
+        <volume> 
+          <factor>0.4</factor>
+        </volume>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>20.0</max-dist>
+      </door>
       <canopy> 
         <name>canopy slide</name>
         <mode>in-transit</mode>
-        <path>Aircraft/Spitfire/Sounds/canopy_slide.wav</path>
-        <property>gear/canopy/position-norm</property>
+        <path>Aircraft/spitfireIX/Sounds/canopy_slide.wav</path>
+        <property>/controls/doors/canopy/position-norm</property>
         <volume> 
-          <factor>0.3</factor>
+          <factor>0.4</factor>
         </volume>
         <reference-dist>10.0</reference-dist>
         <max-dist>20.0</max-dist>
       </canopy>
-      <wind-canopy-closed> 
+      <!--wind-canopy-closed> 
         <name>wind</name>
         <mode>looped</mode>
         <path>Sounds/wind.wav</path>
         <condition> 
           <equals> 
-            <property>gear/canopy/position-norm</property>
+            <property>/controls/doors/canopy/position-norm</property>
             <value>0</value>
           </equals>
         </condition>
@@ -318,7 +329,7 @@
         <path>Sounds/wind.wav</path>
         <condition> 
           <greater-than> 
-            <property>gear/canopy/position-norm</property>
+            <property>/controls/doors/canopy/position-norm</property>
             <value>0.01</value>
           </greater-than>
         </condition>
@@ -371,7 +382,7 @@
       </stall>
       <click> 
         <name>mag left click down</name>
-        <path>Aircraft/Spitfire/Sounds/click.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
         <condition> 
           <property>controls/engines/engine/mag-switch-left</property>
         </condition>
@@ -381,7 +392,7 @@
       </click>
       <click> 
         <name>mag left click up</name>
-        <path>Aircraft/Spitfire/Sounds/click.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
         <condition> 
           <not> 
             <property>controls/engines/engine/mag-switch-left</property>
@@ -393,7 +404,7 @@
       </click>
       <click> 
         <name>mag right click down</name>
-        <path>Aircraft/Spitfire/Sounds/click.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
         <condition> 
           <property>controls/engines/engine/mag-switch-right</property>
         </condition>
@@ -403,7 +414,7 @@
       </click>
       <click> 
         <name>mag right click up</name>
-        <path>Aircraft/Spitfire/Sounds/click.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
         <condition> 
           <not> 
             <property>controls/engines/engine/mag-switch-right</property>
@@ -415,7 +426,7 @@
       </click>
       <click> 
         <name>rgs main click down</name>
-        <path>Aircraft/Spitfire/Sounds/click.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
         <condition> 
           <property>controls/switches/gun-sight-main</property>
         </condition>
@@ -425,7 +436,7 @@
       </click>
       <click> 
         <name>rgs main click up</name>
-        <path>Aircraft/Spitfire/Sounds/click.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
         <condition> 
           <not> 
             <property>controls/switches/gun-sight-main</property>
@@ -434,13 +445,13 @@
         <volume> 
           <factor>1.0</factor>
         </volume>
-      </click>
+      </click-->
       <guns> 
         <name>gunfire</name>
         <mode>looped</mode>
-        <path>Aircraft/Spitfire/Sounds/gunfire_1.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/gunfire_1.wav</path>
         <condition> 
-          <property>ai/submodels/trigger</property>
+          <property>controls/armament/trigger</property>
           <property>ai/submodels/submodel/count</property>
         </condition>
         <volume> 
@@ -448,9 +459,22 @@
           <max>1.0</max>
         </volume>
       </guns>
-	  <click> 
+      <cannons> 
+        <name>cannons</name>
+        <mode>looped</mode>
+        <path>Aircraft/spitfireIX/Sounds/mixed-cannons.wav</path>
+        <condition> 
+          <property>controls/armament/trigger1</property>
+          <property>ai/submodels/submodel/count</property>
+        </condition>
+        <volume> 
+          <factor>1.2</factor>
+          <max>1.0</max>
+        </volume>
+      </cannons>
+	  <!--click> 
         <name>nav lights click down</name>
-        <path>Aircraft/Spitfire/Sounds/click.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
         <condition> 
           <property>controls/lighting/nav-lights</property>
         </condition>
@@ -462,7 +486,7 @@
       </click>
       <click> 
         <name>nav lights click up</name>
-        <path>Aircraft/Spitfire/Sounds/click.wav</path>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
         <condition> 
           <not> 
             <property>controls/lighting/nav-lights</property>
@@ -474,5 +498,53 @@
           <max>0.9</max>
         </volume>
       </click>
+	  <click> 
+        <name>Land lights click down</name>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
+        <condition> 
+          <property>controls/switches/landing-light</property>
+        </condition>
+        <volume> 
+          <factor>1.0</factor>
+		  <min>0.1</min>
+          <max>0.9</max>
+        </volume>
+      </click>
+      <click> 
+        <name>Land lights click up</name>
+        <path>Aircraft/spitfireIX/Sounds/click.wav</path>
+        <condition> 
+          <not> 
+            <property>controls/switches/landing-light</property>
+          </not>
+        </condition>
+        <volume> 
+          <factor>1.0</factor>
+		  <min>0.1</min>
+          <max>0.9</max>
+        </volume>
+      </click>
+		<birds>
+			<name>birdsong</name>
+			<mode>looped</mode>
+			<path>Aircraft/spitfireIX/Sounds/birdsong.wav</path>
+			<condition>
+				<equals>
+					<property>/sim/startup/season</property>
+					<value>summer</value>
+				</equals>
+				<equals>
+					  <property>/controls/doors/canopy/position-norm</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<volume>
+				<property>/position/altitude-ft</property>
+				<factor>-0.0010</factor>
+				<offset>0.4</offset>
+				<min>0.01</min>
+				<max>0.4</max>
+			</volume>
+		</birds-->
     </fx>
   </PropertyList>
