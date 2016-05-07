@@ -63,15 +63,21 @@ October 2007 Detlef Faber
    </gear>
 	
 
-<doors>
-   <canopy>
-      <position-norm type="float">1.0</position-norm>
-   </canopy>
-   <door>
-      <position-norm type="float">1.0</position-norm>
-   </door>
-</doors>
+   <doors>
+     <canopy>
+        <position-norm type="float">1.0</position-norm>
+     </canopy>
+     <door>
+        <position-norm type="float">1.0</position-norm>
+     </door>
+   </doors>
 
+   <switches>
+       <landing-light type="int">1.0</landing-light>
+   </switches>
+   <lighting>
+       <landing-light type="bool">false</landing-light>
+   </lighting>
 
  </controls>
 
@@ -299,6 +305,7 @@ October 2007 Detlef Faber
 	            <float n="11" alias="/engines/engine[0]/crankloop" />
 	            <float n="12" alias="/engines/engine[0]/startup_smoke" />
 	            <float n="13" alias="/gear/gear[2]/caster-angle-deg" />
+	            <float n="16" alias="/surface-positions/elevator-pos-norm"/>
 	            <float n="17" alias="/sim/model/smokeshooterspeed"/>
 	            <float n="18" alias="/sim/aircraft"/>
 

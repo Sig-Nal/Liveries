@@ -56,6 +56,10 @@
     <max>3</max>
     <wrap>0</wrap>
     </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
   </action>
 </animation>
 
@@ -73,6 +77,10 @@
     <max>3</max>
     <wrap>0</wrap>
     </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
   </action>
 </animation>
  <animation>
@@ -89,6 +97,10 @@
     <max>3</max>
     <wrap>0</wrap>
     </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
   </action>
 </animation>
 
@@ -106,6 +118,10 @@
     <max>3</max>
     <wrap>0</wrap>
     </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
   </action>
 </animation>
 
