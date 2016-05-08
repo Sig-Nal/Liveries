@@ -84,7 +84,7 @@ October 2007 Detlef Faber
  <sim>
   <description>Supermarine Spitfire Mk IX</description>
   <author>Detlef Faber</author>
-  <aircraft-version>3.2</aircraft-version>
+  <aircraft-version>3.3</aircraft-version>
   <rating>
     <FDM type="int">4</FDM>
     <systems type="int">3</systems>
