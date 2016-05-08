@@ -671,6 +671,16 @@
       <property>sim/multiplay/generic/float[13]</property>
       <factor>1</factor>
       <center> 
+        <x-m>8.8</x-m>
+        <y-m>0</y-m>
+        <z-m>-0.522</z-m>
+      </center>
+      <axis> 
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+      </axis>
+      <!--center> 
         <x-m>8.345</x-m>
         <y-m>0</y-m>
         <z-m>-0.522</z-m>
@@ -682,7 +692,7 @@
         <x2-m>8.332</x2-m>
         <y2-m>0</y2-m>
         <z2-m>-0.472</z2-m>
-      </axis>
+      </axis-->
     </animation> 
 
  <animation>

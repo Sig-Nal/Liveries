@@ -73,7 +73,7 @@ October 2007 Detlef Faber
    </doors>
 
    <switches>
-       <landing-light type="int">1.0</landing-light>
+       <landing-light type="int">0.0</landing-light> <!--landing-light type="bool">false</landing-light-->
    </switches>
    <lighting>
        <landing-light type="bool">false</landing-light>
