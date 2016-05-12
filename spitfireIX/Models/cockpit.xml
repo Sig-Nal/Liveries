@@ -285,7 +285,7 @@
   </model>
                                  <!--  Thermo degrees  -->
  <model>
-    <name>switch</name>
+    <name>tnv-50</name>
     <path>Aircraft/spitfireIX/Models/Instruments/tnv-50/tnv-50.xml</path>
     <offsets>
         <x-m>3.86</x-m>

@@ -1295,7 +1295,7 @@
   </offsets>
  </model>
 
-  <!-- smoke -->
+  <!-- smokengine -->
   
   <model>
     <path>Aircraft/spitfireIX/Models/Effects/smoke.xml</path>
